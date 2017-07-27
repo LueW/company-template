@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:600');
+*{
+  padding: 0;
+  margin: 0;
+}
+html, body, .cover-page {
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: 'Zilla Slab', serif;
+}
+
+/* ------------------------------- NAVBAR ------------------------------- */
+
+.navbar-default {
+  background: rgba(255,255,255,0.55);
+  padding: 10px 0;
+  border-bottom: none;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+.navbar-default .navbar-brand {
+  color: #25486A;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: black;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #25486A;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(255,255,255,0);
+  border-top: 2px solid rgba(255,255,255,0);
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: black;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.navbar-height {
+  background-color: white;
+  border-bottom: 1px solid #B1B1B1;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+
+@media (max-width: 767px) {
+
+  .navbar-default{
+    background-color: white;
+    border-color: white;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    margin: 0;
+  }
+
+}
+
+/* ------------------------------- HEADER ------------------------------- */
+
+.cover-page {
+  display: table;
+  text-align: center;
+  color: white;
+  padding: 0;
+  background: url(../img/bg-main.jpg) bottom center no-repeat #000;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.cover-page-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.brand-cover-page {
+  font-size: 120px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text-cover-page {
+  margin-top: 15px;
+  font-size: 35px;
+}
+.separator-cover-page {
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid white;
+}
+
+@media (max-width: 991px) {
+
+  .brand-cover-page {
+    font-size: 90px;
+  }
+  .text-cover-page {
+    font-size: 26px;
+  }
+  .separator-cover-page {
+    width: 375px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .brand-cover-page {
+    font-size: 60px;
+  }
+  .text-cover-page {
+    font-size: 17px;
+  }
+  .separator-cover-page {
+    width: 250px;
+  }
+
+}
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------- SECTIONS ------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+section {
+  padding: 100px 0;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.section-text {
+  text-align: center;
+  font-size: 20px;
+}
+.title-line {
+  width: 80px;
+  margin: 0 auto 40px auto;
+}
+
+/* ------------------------------- ABOUT ------------------------------- */
+
+#about .section-title {
+  color: #2B527A;
+}
+#about .title-line {
+  border: 1px solid #2B527A;
+}
+
+/* ------------------------------- SERVICES ------------------------------- */
+
+#services {
+  background-color: #3B6C9C;
+}
+#services .section-title,
+#services .section-text {
+  color: white ;
+}
+#services .title-line {
+  border: 1px solid white;
+  margin-bottom: 40px;
+}
+.service-icon {
+  text-align: center;
+}
+.service-icon i {
+  color: white;
+  border: 4px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 130px;
+  line-height: 130px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 130px;
+}
+.service-title {
+  text-align: center;
+  color: white;
+}
+.service-text {
+  color: white;
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+/* ------------------------------- STAFF ------------------------------- */
+
+#staff .section-title {
+  color: #2B527A;
+}
+#staff .title-line {
+  border: 1px solid #2B527A;
+}
+.card {
+  max-width: 300px;
+  margin: auto auto 20px auto;
+  text-align: center;
+  border: 1px solid;
+  border-color:  #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 0;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  transition-delay: .1s;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-box {
+  padding: 0 16px;
+}
+.card > .card-box > h2 {
+  color: #2B527A;
+}
+.card > .card-box > .title {
+
+}
+
+/* ------------------------------- CONTACT ------------------------------- */
+
+#contact {
+  background-color: #3B6C9C;
+}
+#contact .section-title,
+#contact .section-text {
+  color: white ;
+}
+#contact .title-line {
+  border: 1px solid white;
+  margin-bottom: 40px;
+}
+.form-container {
+  padding: 20px;
+  background-color: #2B527A;
+}
+#contact input,
+#contact button,
+#contact textarea {
+  font-size: 16px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#contact button {
+  border: none;
+  background-color: white;
+  margin-bottom: 0;
+}
+#contact button:hover {
+  background-color: #E6E6E6;
+}
+#contact textarea {
+  resize: none;
+}
+#contact .contact-text {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+#contact .contact-text > ul {
+  list-style: none;
+  margin-top: 40px;
+}
+#contact .contact-text > ul > li {
+  display: inline-block;
+}
+#contact .contact-text > ul > li > a > i {
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 45px;
+  color: white;
+}
+#contact .contact-text > ul > li > a > i:hover {
+  background-color: white;
+  color: #3B6C9C;
+}
+
+/* ------------------------------- MAP ------------------------------- */
+
+.map-frame {
+  width: 100%;
+  height: 400px;
+}
+
+.map-frame iframe{
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative; /* IE needs a position other than static */
+}
+.map-frame iframe.clicked{
+  pointer-events: auto;
+}
+
+/* ------------------------------- FOOTER ------------------------------- */
+
+footer {
+  color: #2B527A;
+  font-size: 20px;
+  text-align: center;
+  padding: 100px 0 25px 0;
+}
